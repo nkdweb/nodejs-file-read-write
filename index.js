@@ -1,6 +1,7 @@
 // run `node index.js` in the terminal
 
-console.log(`Hello Node.js v${process.versions.node}!`);
+//console.log(`Hello Node.js v${process.versions.node}!`);
+console.log("Updating html file with tlemon component ...")
 
 var fs = require('fs');
 const jsdom = require("jsdom");
@@ -55,7 +56,10 @@ readFiles(
       if (contentChanged) {
         fs.writeFile("html/" + filename, newContent, function (err) {
           if (err) throw err;
+          console.log(`File "${filename}" updated.`);
         });
+      } else {
+        console.log(`File "${filename}" unchanged.`);
       }
     },
     function (err) {
