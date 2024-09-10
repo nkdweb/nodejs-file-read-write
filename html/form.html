@@ -5,11 +5,13 @@
 <body>
     <form>
         <label for="fname">First name:</label><br>
-        <t-input type="text" id="fname" name="fname" value="John" readonly size="50"></t-input>
+        <input type="text" id="fname" name="fname" value="John" readonly size="50" class="text-center" restrictspecials>
         <label for="lname">Last name:</label><br>
-        <t-input type="text" id="lname" name="lname" value="Doe" disabled maxlength="4"></t-input>
+        <input type="text" id="lname" name="lname" value="Doe" disabled maxlength="4">
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd">
         <label for="country_code">Country code:</label>
-        <t-input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code" required></t-input>
+        <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code" required>
       </form>
 </body>
     
